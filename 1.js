@@ -1,8 +1,9 @@
 const delay = ms => {
-    return new Promise((resolved) => {
-        resolved(ms)
-    });};
-    
+   return new Promise(resolved => {
+      resolved(ms);
+   });
+};
+
 const logger = time => console.log(`Resolved after ${time}ms`);
 
 delay(2000).then(logger); // Resolved after 2000ms
