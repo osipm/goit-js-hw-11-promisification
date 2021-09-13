@@ -14,7 +14,7 @@ const makeTransaction = transaction => {
                delay: delay,
             });
          } else {
-            reject(logError(transaction.id));
+            reject(transaction.id);
          }
       }, delay);
    });
